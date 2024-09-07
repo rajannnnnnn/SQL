@@ -1,7 +1,7 @@
 drop database if exists employee;
 
 
-------------- Creating Database and Tables --------------------------------------------------------
+--Creating Database and Tables --------------------------------------------------------
 create database employee;
 use employee;
 create table departments(
@@ -26,7 +26,7 @@ create table employees(
 		foreign key (location_id) references location(location_id)
 );
 
-------------- Inserting Data into its fields --------------------------------------------------------
+-- Data Insertion  --------------------------------------------------------
 insert into location(location_id, location) values 
 		(1,"Chennai"),
 		(2,"Bangalore"),
@@ -79,6 +79,7 @@ values
 (5029, 'Arjun Kumar', 'M', 33, '2019-09-11', 'Quality Assurance Analyst', 12, 2, 80000),
 (5030, 'Sara Iyer', 'F', 28, '2019-11-20', 'Project Manager', 5, 1, 90000);
 
+-- Data Manipulation -----------------------------------------------------------
 select * from departments;
 select location from location;
 select employee_name, designation from employees;
@@ -90,7 +91,7 @@ delete from employees where hire_date < date("2017-01-01");
 delete from employees where employee_id = 5025;
 
 
-------------- Data retrieval based on different needs --------------------------------------------------------
+-- Data Retrieval --------------------------------------------------------
 select distinct salary from employees;
 
 select age as Employee_Age, salary as Employee_Salary from employees;
@@ -115,7 +116,7 @@ where employee_name LIKE 'A%'
    OR employee_name LIKE 'u%';
 select * from employees where employee_name like "_sh%";
 
-
+-- Sorting and Grouping -----------------------------------------------
 select * from employees where hire_date > date("2019-01-01") order by hire_date;
 select * from employees order by department_id asc, salary desc;
 
@@ -131,6 +132,7 @@ select designation, avg(salary) from employees where designation like "%Analyst%
 select department_id, count(*) CountEmployees from employees group by department_id having CountEmployees<3;
 select location_id, avg(age) AverageAge from employees where gender="F" group by location_id having AverageAge<30;
 
+-- Joins --------------------------------------------------------------
 select e.employee_name as employee_name, 
 e.designation as designation, 
 d.department_name as department_name
@@ -149,6 +151,7 @@ from employees as e
 right join location as l
 on l.location_id = e.location_id;
 
+-- Functions ---------------------------------------------
 select round(avg(age)) from employees;
 select *,ceil(sqrt(salary)) bonus from employees;
 select left(location,3) from location;
@@ -171,8 +174,7 @@ on e.location_id = l.location_id
 group by l.location
 having l.location = "Bangalore" or l.location = "Hyderbad";
 
-
-------------- Creating stored procedures --------------------------------------------------------
+-- Subqueries --------------------------------------------------------------
 select * from employees where salary > (select avg(salary) from employees);
 select * from employees where salary = (select max(salary) from employees);
 select * from employees where department_id = (select department_id from employees 
@@ -180,7 +182,7 @@ where employee_name = "Arjun Kumar");
 select * from employees where department_id in (select department_id from departments 
 where department_name like "%Development%");
 
-
+-- Stored procedures --------------------------------------------------------
 delimiter //
 create procedure GetEmployeesByDepartmentName(in dept_name varchar(100))
 begin
