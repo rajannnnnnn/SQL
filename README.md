@@ -27,7 +27,7 @@ In this project, _employee_ database is created and various king of SQL operatio
 Write SQL queries to retrieve the following information:<br>
 ⦿  Retrieve all data from the Departments table.<br>
 ⦿  Display only the location name from the Location table.<br>
-⦿  Display the employee names and their respective designations<br>.
+⦿  Display the employee names and their respective designations.<br>
  
 **Updating (UPDATE):** <br>
 Update the records in the Employees table based on the following criteria:<br>
@@ -42,12 +42,15 @@ Write SQL statements to delete the following records:<br>
 ### Data Retrieval:
 **Distinct Values:**<br>
 ⦿  Write a query to retrieve distinct salaries from the Employees table.<br>
+
 **Alias (AS):**<br>
 ⦿  Provide aliases for the "age" and "salary" columns as "Employee_Age" and "Employee_Salary", respectively.<br>
+
 **Where Clause & Operators (Arithmetic, Comparison, Logical):**<br>
 ⦿  Calculate the net salary per employee by adding a 10% bonus.<br>
 ⦿  Retrieve employees with a salary greater than ₹50000 and hired before 2016-01-01.<br>
 ⦿  List employees who are Data Analyst or Data Scientist.<br>
+
 **Other Operators:**<br>
 ⦿  Find the employee whose designation is missing and fill it with "Data Scientist".<br>
 ⦿  List employees whose department_id is either 1, 3, 4, 9, or 12.<br>
@@ -56,19 +59,19 @@ Write SQL statements to delete the following records:<br>
 ⦿  Display the employee names that have 'sh' as the second and third characters.<br>
 
 ### Sorting and Grouping:
-**ORDER BY:**
+**ORDER BY:**<br>
 ⦿  List employees hired after January 1, 2019, ordered by hire date.<br>
 ⦿  Find employees sorted by department ID in ascending order and salary in descending order.<br>
-**LIMIT:**
+**LIMIT:**<br>
 ⦿  Retrieve the top 10 highest paid employees from the Employees table.<br>
 ⦿  Display the first 5 employees hired in the year 2018.<br>
-**Aggregate Functions:**
+**Aggregate Functions:**<br>
 ⦿  Calculate the sum of all salaries in the Finance department.<br>
 ⦿  Find the minimum age among all employees.<br>
-**GROUP BY:**
+**GROUP BY:**<br>
 ⦿  List the maximum salary for each location.<br>
 ⦿  Calculate the average salary for each designation containing the word 'Analyst'.<br>
-**HAVING:**
+**HAVING:**<br>
 ⦿  Find departments with less than 3 employees.<br>
 ⦿  Find locations with female employees whose average age is below 30.<br>
 
