@@ -20,18 +20,18 @@ In this project, _employee_ database is created and various king of SQL operatio
 ⦿  Establish links between the "department_id" and "location_id" fields in the "employees" table and their respective tables.<br>
 
 ### Data Manipulation
-**Selection (SELECT):** 
+**Selection (SELECT):** <br>
 Write SQL queries to retrieve the following information:<br>
 ⦿  Retrieve all data from the Departments table.<br>
 ⦿  Display only the location name from the Location table.<br>
 ⦿  Display the employee names and their respective designations<br>.
  
-**Updating (UPDATE):** 
+**Updating (UPDATE):** <br>
 Update the records in the Employees table based on the following criteria:<br>
 ⦿  Change the designation of employee with ID 5001 to 'Senior Data Analyst'.<br>
 ⦿  Increase the salary of all employees in the Finance department by 10%.<br>
 
-**Deletion (DELETE):** 
+**Deletion (DELETE):** <br>
 Write SQL statements to delete the following records:<br>
 ⦿  Remove all records from the Employees table where the hire date is before '2017-01-01'.<br>
 ⦿  Delete the record of the employee with ID 5025.<br>
