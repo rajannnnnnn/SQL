@@ -123,5 +123,3 @@ Here you go:
 
 **2. Stored Procedure with OUT Parameter:**<br>
 *  Create a stored procedure named FindEmployeeBirthYearByID that takes an employee ID as input and returns the employee's birth year. Retrieve the birth year of employees with the IDs 5004, 5018 and 5029.<br>
-
-Is there anything specific from this conversation you'd like me to remember for the future?
