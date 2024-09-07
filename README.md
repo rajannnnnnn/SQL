@@ -40,7 +40,7 @@ Write SQL statements to delete the following records:<br>
 *  Delete the record of the employee with ID 5025.<br>
 Here you go:
 
-### Data Retrieval:
+## Data Retrieval:
 **Distinct Values:**<br>
 *  Write a query to retrieve distinct salaries from the Employees table.<br>
 
@@ -59,7 +59,7 @@ Here you go:
 *  Find employees whose name starts with a vowel.<br>
 *  Display the employee names that have 'sh' as the second and third characters.<br>
 
-### Sorting and Grouping:
+## Sorting and Grouping:
 **ORDER BY:**<br>
 *  List employees hired after January 1, 2019, ordered by hire date.<br>
 *  Find employees sorted by department ID in ascending order and salary in descending order.<br>
@@ -80,7 +80,7 @@ Here you go:
 *  Find departments with less than 3 employees.<br>
 *  Find locations with female employees whose average age is below 30.<br>
 
-### Joins:
+## Joins:
 **Inner Join:**<br>
 *  List employee names, their designations, and department names where employees are assigned to a department.<br>
 
@@ -90,7 +90,7 @@ Here you go:
 **Right Join:**<br>
 *  Display all locations along with the names of employees assigned to each location. If no employees are assigned to a location, display NULL for employee name.<br>
 
-### Functions:
+## Functions:
 **1. Built-in Numeric Functions:**<br>
 *  Find the average age of employees, rounded off to the nearest integer.<br>
 *  Retrieve all employee records including a bonus column, calculated as the square root of their salary rounded up to the nearest larger integer.<br>
@@ -108,7 +108,7 @@ Here you go:
 **4. User-defined Functions:**<br>
 *  Define a function to retrieve the employee count by location name. Find the employee count for the cities Bangalore and Hyderabad.<br>
 
-### Subqueries
+## Subqueries
 **1. Single-Row Subqueries:**<br>
 *  Retrieve the details of employees with salaries greater than the average salary of all employees.<br>
 *  List the employee(s) with the highest salary.<br>
@@ -117,7 +117,7 @@ Here you go:
 **2. Multi-Row Subqueries:**<br>
 *  Find the employees who work in departments with 'Development' in their name.<br>
 
-### Stored Procedures
+## Stored Procedures
 **1. Stored Procedure with IN Parameter:**<br>
 *  Define a stored procedure named GetEmployeesByDepartmentName that takes a department name as input and retrieves employees belonging to that department. Retrieve employee details of the departments 'IT' and 'Human Resources'.<br>
 
