@@ -6,13 +6,13 @@ In this project, _employee_ database is created and various king of SQL operatio
 
 ### Creating Database and Tables
 ⦿  Drop the 'employee' database if it exists and recreate it, ensuring that all tables are created with the appropriate constraints as instructed.<br>
-**Departments Table:**
+**Departments Table:**<br>
 ⦿  Ensure that the "department_id" uniquely identifies each department.<br>
 ⦿  Set up constraints on the "department_name" to avoid duplicate and null entries.<br>
-**Location Table:**
+**Location Table:**<br>
 ⦿  Establish a mechanism to automatically generate unique identifiers for each location, ensuring that they are incremented sequentially.<br>
 ⦿  Implement constraints to prevent the insertion of null and duplicate locations.<br>
-**Employees Table:**
+**Employees Table:**<br>
 ⦿  Guarantee that each employee has a distinct identifier.<br>
 ⦿  Create a restriction to ensure that the employee's name is always provided.<br>
 ⦿  Enforce a condition to ensure that the employee's age is 18 or above.<br>
