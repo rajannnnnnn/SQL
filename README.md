@@ -1,47 +1,47 @@
  ## HR Management using SQL
-In this project, _employee_ database is created and various king of SQL operations are implemented to it.
+In this project, _employee_ database is created and various kind of SQL operations are implemented to it.
 
 ### Schema:
 ![Screenshot (159)](https://github.com/user-attachments/assets/c19355da-40b0-4435-bcb7-1ef5d72eb661)
 
 ### Creating Database and Tables
-⦿  Drop the 'employee' database if it exists and recreate it, ensuring that all tables are created with the appropriate constraints as instructed.<br>
+*  Drop the 'employee' database if it exists and recreate it, ensuring that all tables are created with the appropriate constraints as instructed.<br>
 
 **Departments Table:**<br>
-⦿  Ensure that the "department_id" uniquely identifies each department.<br>
-⦿  Set up constraints on the "department_name" to avoid duplicate and null entries.<br>
+*  Ensure that the "department_id" uniquely identifies each department.<br>
+*  Set up constraints on the "department_name" to avoid duplicate and null entries.<br>
 
 **Location Table:**<br>
-⦿  Establish a mechanism to automatically generate unique identifiers for each location, ensuring that they are incremented sequentially.<br>
-⦿  Implement constraints to prevent the insertion of null and duplicate locations.<br>
+*  Establish a mechanism to automatically generate unique identifiers for each location, ensuring that they are incremented sequentially.<br>
+*  Implement constraints to prevent the insertion of null and duplicate locations.<br>
 
 **Employees Table:**<br>
-⦿  Guarantee that each employee has a distinct identifier.<br>
-⦿  Create a restriction to ensure that the employee's name is always provided.<br>
-⦿  Enforce a condition to ensure that the employee's age is 18 or above.<br>
-⦿  Automatically assign the current date to the "hire_date" field if not specified.<br>
-⦿  Establish links between the "department_id" and "location_id" fields in the "employees" table and their respective tables.<br>
+*  Guarantee that each employee has a distinct identifier.<br>
+*  Create a restriction to ensure that the employee's name is always provided.<br>
+*  Enforce a condition to ensure that the employee's age is 18 or above.<br>
+*  Automatically assign the current date to the "hire_date" field if not specified.<br>
+*  Establish links between the "department_id" and "location_id" fields in the "employees" table and their respective tables.<br>
 
 ### Data Manipulation
 **Selection (SELECT):** <br>
 Write SQL queries to retrieve the following information:<br>
-⦿  Retrieve all data from the Departments table.<br>
-⦿  Display only the location name from the Location table.<br>
-⦿  Display the employee names and their respective designations.<br>
+*  Retrieve all data from the Departments table.<br>
+*  Display only the location name from the Location table.<br>
+*  Display the employee names and their respective designations.<br>
  
 **Updating (UPDATE):** <br>
 Update the records in the Employees table based on the following criteria:<br>
-⦿  Change the designation of employee with ID 5001 to 'Senior Data Analyst'.<br>
-⦿  Increase the salary of all employees in the Finance department by 10%.<br>
+*  Change the designation of employee with ID 5001 to 'Senior Data Analyst'.<br>
+*  Increase the salary of all employees in the Finance department by 10%.<br>
 
 **Deletion (DELETE):** <br>
 Write SQL statements to delete the following records:<br>
-⦿  Remove all records from the Employees table where the hire date is before '2017-01-01'.<br>
-⦿  Delete the record of the employee with ID 5025.<br>
+*  Remove all records from the Employees table where the hire date is before '2017-01-01'.<br>
+*  Delete the record of the employee with ID 5025.<br>
 
 ### Data Retrieval:
 **Distinct Values:**<br>
-⦿  Write a query to retrieve distinct salaries from the Employees table.<br>
+*  Write a query to retrieve distinct salaries from the Employees table.<br>
 
 **Alias (AS):**<br>
 ⦿  Provide aliases for the "age" and "salary" columns as "Employee_Age" and "Employee_Salary", respectively.<br>
