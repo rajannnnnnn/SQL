@@ -6,12 +6,15 @@ In this project, _employee_ database is created and various king of SQL operatio
 
 ### Creating Database and Tables
 ⦿  Drop the 'employee' database if it exists and recreate it, ensuring that all tables are created with the appropriate constraints as instructed.<br>
+
 **Departments Table:**<br>
 ⦿  Ensure that the "department_id" uniquely identifies each department.<br>
 ⦿  Set up constraints on the "department_name" to avoid duplicate and null entries.<br>
+
 **Location Table:**<br>
 ⦿  Establish a mechanism to automatically generate unique identifiers for each location, ensuring that they are incremented sequentially.<br>
 ⦿  Implement constraints to prevent the insertion of null and duplicate locations.<br>
+
 **Employees Table:**<br>
 ⦿  Guarantee that each employee has a distinct identifier.<br>
 ⦿  Create a restriction to ensure that the employee's name is always provided.<br>
@@ -37,15 +40,15 @@ Write SQL statements to delete the following records:<br>
 ⦿  Delete the record of the employee with ID 5025.<br>
 
 ### Data Retrieval:
-**Distinct Values:**
+**Distinct Values:**<br>
 ⦿  Write a query to retrieve distinct salaries from the Employees table.<br>
-**Alias (AS):**
+**Alias (AS):**<br>
 ⦿  Provide aliases for the "age" and "salary" columns as "Employee_Age" and "Employee_Salary", respectively.<br>
-**Where Clause & Operators (Arithmetic, Comparison, Logical):**
+**Where Clause & Operators (Arithmetic, Comparison, Logical):**<br>
 ⦿  Calculate the net salary per employee by adding a 10% bonus.<br>
 ⦿  Retrieve employees with a salary greater than ₹50000 and hired before 2016-01-01.<br>
 ⦿  List employees who are Data Analyst or Data Scientist.<br>
-**Other Operators:**
+**Other Operators:**<br>
 ⦿  Find the employee whose designation is missing and fill it with "Data Scientist".<br>
 ⦿  List employees whose department_id is either 1, 3, 4, 9, or 12.<br>
 ⦿  Identify employees whose salary is not between 50000 and 80000.<br>
