@@ -1,10 +1,10 @@
- ## HR Management using SQL
+# HR Management using SQL
 In this project, _employee_ database is created and various kind of SQL operations are implemented to it.
 
-### Schema:
+## Schema:
 ![Screenshot (159)](https://github.com/user-attachments/assets/c19355da-40b0-4435-bcb7-1ef5d72eb661)
 
-### Creating Database and Tables
+## Creating Database and Tables
 *  Drop the 'employee' database if it exists and recreate it, ensuring that all tables are created with the appropriate constraints as instructed.<br>
 
 **Departments Table:**<br>
@@ -22,7 +22,7 @@ In this project, _employee_ database is created and various kind of SQL operatio
 *  Automatically assign the current date to the "hire_date" field if not specified.<br>
 *  Establish links between the "department_id" and "location_id" fields in the "employees" table and their respective tables.<br>
 
-### Data Manipulation
+## Data Manipulation
 **Selection (SELECT):** <br>
 Write SQL queries to retrieve the following information:<br>
 *  Retrieve all data from the Departments table.<br>
