@@ -1,4 +1,4 @@
-## HR Management using SQL
+ ## HR Management using SQL
 In this project, _employee_ database is created and SQL operations are implemented.
 
 ### Schema:
@@ -6,13 +6,13 @@ In this project, _employee_ database is created and SQL operations are implement
 
 ### Creating Database and Tables
 ⦿  Drop the 'employee' database if it exists and recreate it, ensuring that all tables are created with the appropriate constraints as instructed.
-Departments Table:
+**Departments Table:**
 ⦿  Ensure that the "department_id" uniquely identifies each department.
 ⦿  Set up constraints on the "department_name" to avoid duplicate and null entries.
-Location Table:
+**Location Table:**
 ⦿  Establish a mechanism to automatically generate unique identifiers for each location, ensuring that they are incremented sequentially.
 ⦿  Implement constraints to prevent the insertion of null and duplicate locations.
-Employees Table:
+**Employees Table:**
 ⦿  Guarantee that each employee has a distinct identifier.
 ⦿  Create a restriction to ensure that the employee's name is always provided.
 ⦿  Enforce a condition to ensure that the employee's age is 18 or above.
@@ -20,16 +20,16 @@ Employees Table:
 ⦿  Establish links between the "department_id" and "location_id" fields in the "employees" table and their respective tables.
 
 ### Data Manipulation
-Selection (SELECT): Write SQL queries to retrieve the following information:
+**Selection (SELECT):** Write SQL queries to retrieve the following information:
 ⦿  Retrieve all data from the Departments table.
 ⦿  Display only the location name from the Location table.
 ⦿  Display the employee names and their respective designations.
  
-Updating (UPDATE): Update the records in the Employees table based on the following criteria:
+**Updating (UPDATE):** Update the records in the Employees table based on the following criteria:
 ⦿  Change the designation of employee with ID 5001 to 'Senior Data Analyst'.
 ⦿  Increase the salary of all employees in the Finance department by 10%.
 
-Deletion (DELETE): Write SQL statements to delete the following records:
+**Deletion (DELETE):** Write SQL statements to delete the following records:
 ⦿  Remove all records from the Employees table where the hire date is before '2017-01-01'.
 ⦿  Delete the record of the employee with ID 5025.
 
