@@ -211,3 +211,33 @@ call FindEmployeeBirthYearByID(5018,@birth_year);
 select @birth_year as birth_year;
 call FindEmployeeBirthYearByID(5029,@birth_year);
 select @birth_year as birth_year;
+
+-- Triggers --------------------------------------------------------
+delimiter //
+create trigger salary_average_if_not_provided
+before insert on employees
+for each row
+begin	
+		if new.salary is null then
+			set new.salary = (select avg(salary) from employees);
+		end if;
+end //
+delimiter ;
+insert into employees(employee_id, employee_name, gender, age, hire_date, designation, department_id, location_id)
+values (5031, 'Feros', 'M', 21, '2017-06-20', 'Financial Analyst', 7, 1);
+
+delimiter //
+create trigger prevent_deletion_of_latest_joined_employee
+after delete on employees
+for each row
+begin
+		if year(old.hire_date) = year(current_date()) then
+				signal sqlstate '45000'
+				set message_text = "Cannot delete Employee who joined in the most recent year !";
+		end if;
+end //
+delimiter ;
+insert into employees(employee_id, employee_name, gender, age, hire_date, designation, department_id, location_id)
+values (5032, 'HaagRen', 'M', 21, '2024-06-20', 'Financial Analyst', 7, 1);
+delete from employees where employee_id = 5032;
+select * from employees;
